@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;   
+}
+
+body, h1, h2, h3, h4, h5, h6, p, li, a, form {
+    font-family: 'Roboto', sans-serif !important; 
+}
+
+/*-------------
+header/navbar 
+--------------*/
+
+#brand p {
+    text-align: center;
+    margin-top:0;
+    font-weight: 300;
+}
+
+#brand h2 {
+    margin-bottom: 0;
+    font-weight: 400;
+}
+
+#header {
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height:auto;
+}
+
+.nav-links {
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.nav-links li {
+    padding-bottom: 7px;
+    border-bottom: 1px solid black;
+    margin-top:7px;
+    font-size:1.05em;
+}
+
+.nav-links li:last-child {
+    border: none;
+}
+
+.nav-links a {
+    color:black;
+}
+
+.nav-links a:hover {
+    text-decoration: none;
+    font-weight: 700;
+    transition:font-weight 0.5s;
+}
+
+/*-------------
+jumbotron
+--------------*/
+
+.jumbotron {
+    height:400px;
+    margin-top:20px;
+    background: url(../img/jbtn-stock-filler.jpeg) center center no-repeat;
+    background-size: cover;
+}
+
+/*-------------
+supporting cols
+--------------*/
+
+.support-cols {
+    text-align: center;
+    margin-top:20px;
+    margin-bottom:150px;
+}
+
+
+.support h2 {
+    font-weight: 400;
+}
+
+.support p {
+    font-weight: 300;
+}
+
+/*-------------
+media queries
+--------------*/
+
+@media (min-width: 720px) {
+    #header {
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 940px;
+        margin:0 auto;
+        align-items: center;
+    }
+    .nav-links {
+        flex-direction: row;
+        margin-right:20px;
+        align-items: center;
+    }
+    .nav-links li {
+        margin-left: 6px;
+        padding-right:6px;
+        border-bottom:none;
+        border-right:1px solid black;
+        text-align: center;
+    }
+    #brand {
+        margin-right:auto;
+        margin-left:20px;
+    }
+    .nav-links li:last-child {
+        border:none;
+    }
+}
