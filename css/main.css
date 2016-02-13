@@ -6,19 +6,38 @@ body, h1, h2, h3, h4, h5, h6, p, li, a, form {
     font-family: 'Roboto', sans-serif !important; 
 }
 
+h1, h2, h3, h4, h5, h6, li, a {
+    text-transform: lowercase;
+}
+
+.content-wrap {
+    min-height:100vh;
+}
+
+p {
+    font-weight: 300;
+}
+
 /*-------------
 header/navbar 
 --------------*/
 
 #brand p {
-    text-align: center;
     margin-top:0;
-    font-weight: 300;
 }
 
 #brand h2 {
     margin-bottom: 0;
+    text-align: center;
     font-weight: 400;
+}
+
+#brand a {
+    color:#33363b;
+}
+
+#brand a {
+    text-decoration: none;
 }
 
 #header {
@@ -28,6 +47,7 @@ header/navbar
     justify-content: center;
     align-items: center;
     height:auto;
+    color:#33363B;
 }
 
 .nav-links {
@@ -39,11 +59,16 @@ header/navbar
     margin-bottom: 20px;
 }
 
+.active {
+    font-weight: 400;
+}
+
 .nav-links li {
     padding-bottom: 7px;
     border-bottom: 1px solid black;
     margin-top:7px;
     font-size:1.05em;
+    font-weight: 300;
 }
 
 .nav-links li:last-child {
@@ -56,7 +81,7 @@ header/navbar
 
 .nav-links a:hover {
     text-decoration: none;
-    font-weight: 700;
+    font-weight: 400;
     transition:font-weight 0.5s;
 }
 
@@ -67,9 +92,36 @@ jumbotron
 .jumbotron {
     height:400px;
     margin-top:20px;
-    background: url(../img/jbtn-stock-filler.jpeg) center center no-repeat;
+    background: url(../img/jbtn-mke.jpg) center center no-repeat;
     background-size: cover;
 }
+
+/*-------------
+about me
+--------------*/
+
+.about img {
+    border-radius: 10px;
+    width:200px;
+    margin:50px auto 0 auto;
+    display: block;
+}
+
+.about h2 {
+    margin-top:45px;
+    font-weight: 400;
+}
+
+.about p {
+    line-height: 1.6;
+}
+
+.about {
+    max-width: 90%;
+    margin:0 auto 20px auto;
+}
+
+
 
 /*-------------
 supporting cols
@@ -78,23 +130,176 @@ supporting cols
 .support-cols {
     text-align: center;
     margin-top:20px;
-    margin-bottom:150px;
+    margin-bottom:50px;
+    color: #33363B;
 }
 
+.support {
+    max-width: 80%;
+    margin:0 auto;
+}
 
 .support h2 {
     font-weight: 400;
+    border-bottom: 1px solid #33363b;
+    padding-bottom: 5px;
+    margin-bottom:20px;
 }
 
 .support p {
-    font-weight: 300;
+    margin-top:20px;
+    margin-bottom:25px;
 }
+
+
+.support img {
+    width:200px;
+    height: 42px;
+    margin-top:10px;
+    text-align: center;
+    /*-webkit-filter: grayscale(100%);*/
+}
+
+/*
+hr {
+    border-width: 2px;
+    max-width:90%;
+}
+
+
+
+.btn {
+    box-shadow: none;
+    border:none;
+    background:white;
+    border:1px solid #33363b;
+    padding: 5px 40px;
+    display: inline-block;
+    font-weight: 300;
+    margin-top:15px;
+}
+
+.btn:hover {
+    background: #33363b;
+    color:white;
+    font-weight: 300;
+    box-shadow: none;
+} */
+
+/*-------------
+pages-lead
+--------------*/
+
+.pages-lead {
+    max-width: 940px;
+    margin:40px auto 0 auto;
+    width:90%;
+}
+
+.pages-lead h2 {
+    border-bottom: 1px solid #33363b;
+    display:inline-block;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.brand-lead {
+    text-align: center;
+}
+
+.site-hr {
+    max-width: 940px;
+}
+
+/*-------------
+projects
+--------------*/
+
+.projects-overall {
+    max-width: 940px;
+    margin:0 auto;
+    width:90%;
+}
+
+.projects-overall h4 {
+    border-bottom: 1px solid #33363b;
+    display:inline-block;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+.codepen-links {
+    color:black;
+    border-bottom: 1px solid #33363b;
+}
+
+.codepen-links:hover {
+    text-decoration: none;
+    font-weight: 400;
+    color:black;
+}
+
+.codepen-links:visited {
+    text-decoration: none;
+    font-weight: 300;
+    color:black;
+}
+
+
+.project-imgs-main {
+    width:350px;
+    height: 213px;
+    border:1px solid #33363b;
+    margin:20px auto 0 auto;
+    display:block;
+}
+
+.project-imgs-mobile {
+    width:200px;
+    height:300px;
+    border:1px solid #33363b;
+    margin:20px auto 40px; auto;
+    display:block;
+}
+
+/*-------------
+footer
+--------------*/
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 940px;
+    margin:0 auto;
+    min-height: 100vh-80px;
+    height:80px;
+    /*border-top:1px solid #595959;*/
+}
+
+.footer h4 {
+    margin-right:auto;
+    font-size:14px;
+    margin-left:20px;
+}
+
+.footer img {
+    margin-left:15px;
+}
+
+.foot-links {
+    margin-right: 20PX;
+}
+
 
 /*-------------
 media queries
 --------------*/
 
-@media (min-width: 720px) {
+@media (min-width: 712px) {
     #header {
         flex-direction: row;
         flex-wrap: wrap;
@@ -111,7 +316,7 @@ media queries
         margin-left: 6px;
         padding-right:6px;
         border-bottom:none;
-        border-right:1px solid black;
+        border-right:1px solid #33363B;
         text-align: center;
     }
     #brand {
