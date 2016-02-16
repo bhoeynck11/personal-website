@@ -246,6 +246,10 @@ projects
     color:black;
 }
 
+.projects h4 {
+    margin-top:40px;
+}
+
 
 .project-imgs-main {
     width:350px;
@@ -259,8 +263,12 @@ projects
     width:200px;
     height:300px;
     border:1px solid #33363b;
-    margin:20px auto 40px; auto;
+    margin:20px auto 0 auto;
     display:block;
+}
+
+.col-md-4 h5 {
+    text-align: center;
 }
 
 /*-------------
