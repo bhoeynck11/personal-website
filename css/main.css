@@ -252,7 +252,7 @@ projects
 
 
 .project-imgs-main {
-    width:350px;
+    width:420px;
     height: 213px;
     border:1px solid #33363b;
     margin:20px auto 0 auto;
@@ -267,7 +267,7 @@ projects
     display:block;
 }
 
-.col-md-4 h5 {
+.col-md-4 h5, .col-sm-6 h5 {
     text-align: center;
 }
 
