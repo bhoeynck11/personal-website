@@ -4,6 +4,7 @@
 
 body, h1, h2, h3, h4, h5, h6, p, li, a, form {
     font-family: 'Roboto', sans-serif !important; 
+    color:#333;
 }
 
 h1, h2, h3, h4, h5, h6, li, a {
@@ -14,7 +15,7 @@ h1, h2, h3, h4, h5, h6, li, a {
     min-height:100vh;
 }
 
-p {
+p, label {
     font-weight: 300;
 }
 
@@ -92,7 +93,7 @@ jumbotron
 .jumbotron {
     height:400px;
     margin-top:20px;
-    background: url(../img/jbtn-mke.jpg) center center no-repeat;
+    background: url(../img/mke_jbtn_paid3.jpg) center center no-repeat;
     background-size: cover;
 }
 
@@ -121,6 +122,9 @@ about me
     margin:0 auto 20px auto;
 }
 
+#mugshot {
+    border:1px solid #333;
+}
 
 
 /*-------------
@@ -328,12 +332,58 @@ footer
 
 .footer img {
     margin-left:15px;
+    height:16px;
+    width:16px;
 }
 
 .foot-links {
     margin-right: 20PX;
 }
 
+
+/*-------------
+contact page
+--------------*/
+
+.contact {
+    margin-top:50px;
+}
+
+.contact h3 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.contact-ways {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.contact-form {
+    margin-bottom: 30px;
+}
+
+.contact-ways img {
+    height:20px;
+    width:20px;
+    margin-right: 10px;
+}
+
+.contact-ways a {
+    color:#333;
+    font-weight: 300;
+}
+
+.contact-ways li {
+    margin-bottom: 15px;
+}
+
+.contact-ways a:hover {
+    text-decoration: none;
+    font-weight: 400;
+    transition:all 0.5s;
+    color: #333;
+}
 
 /*-------------
 media queries
