@@ -122,8 +122,39 @@ about me
     margin:0 auto 20px auto;
 }
 
+.about h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
 #mugshot {
     border:1px solid #333;
+}
+
+.about-lists {
+    list-style-position: outside;
+    margin-left: 30px;
+    list-style-type: disc;
+    font-weight: 300;
+}
+
+.about-lists li {
+    text-transform: none !important;
+    margin-bottom: 5px;
+}
+
+.about-lists span {
+    font-weight: 400;
+}
+
+.about-lists-sub {
+    list-style-position: outside;
+    margin-left: 30px;
+    list-style-type:circle;
+    font-weight: 300;
 }
 
 
